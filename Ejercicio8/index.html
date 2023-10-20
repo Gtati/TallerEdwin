@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generador de Comentarios</title>    
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Comentarios</h1>
+        <div class="comment-form">
+          <label for="comment">Añadir un comentario:</label>
+          <textarea id="comment" rows="4" placeholder="máximo 255 caracteres" oninput="updateCount()"></textarea>
+          <p id="counter" class="counter">255</p>
+          <div class="buttons">
+            <button id="submit-comment" onclick="saveText()">Comentar</button>
+            <button id="submit-comment" onclick="texttoUpperCase()">Texto en Mayúsculas</button>
+            <button id="submit-comment" onclick="textToLowerCase()">Texto en minúsculas</button>
+          </div>
+        </div>
+        <div class="comment-box">
+          <ul>
+            <li>
+              <p id="textSave"><strong></strong></p>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
